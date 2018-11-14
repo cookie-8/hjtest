@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script data-main="js/main.js" src="js/require.js"></script>
+    <title>requireJS</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            border: 20px red solid;
+            background-color:paleturquoise;
+            -webkit-border-image: url(./image/img02.jpg) 20 20 round;
+            /* Safari 5 and older */
+            -o-border-image: url(./image/img02.jpg) 20 20 round;
+            /* Opera */
+            border-image: url(./image/img02.jpg) 20 20 round;
+        }
+        .div2 {
+            width: 200px;
+            height: 200px;
+            border: 20px red solid;
+            background-color: antiquewhite;
+            -webkit-border-image: url(./image/img01.jpg) 30 30 round;
+            /* Safari 5 and older */
+            -o-border-image: url(./image/img01.jpg) 30 30 round;
+            /* Opera */
+            border-image: url(./image/img01.jpg) 30 30 round;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <button id="btn">点我</button>
+    <br>
+    <hr>
+    <div class="div1">
+
+    </div>
+    <div class="div2">
+
+    </div>
+    
+
+
+
+    <script>
+        require(["jquery", "a"], function ($, brr) {
+            $(function () {
+                //debugger
+                console.log(brr);
+                $('#btn').click(function () {
+                    //debugger
+                    console.log(brr)
+                })
+
+            })
+        })
+    </script>
+</body>
+
+</html>

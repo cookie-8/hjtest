@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0px
+        }
+
+        .flex-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-left,
+        .flex-center,
+        .flex-right {
+            height: 200px;
+        }
+
+        .flex-left,
+        .flex-right {
+            width: 100px;
+            background-color: aquamarine;
+            flex:1;
+        }
+
+        .flex-center {
+            flex:2;
+            background-color: beige;
+        }
+
+        .flex-left {
+            left: 0;
+        }
+
+        .flex-right {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div class="flex-left">
+            <h2>我在左</h2>
+        </div>
+        <div class="flex-center">
+            <h2>我在中间</h2>
+        </div>
+        <div class="flex-right">
+            <h2>我在右</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

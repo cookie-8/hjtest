@@ -1,0 +1,15 @@
+//普通函数
+function fn1(n){
+var a=0;
+var b =1;
+var arr = [0,1];
+for(let i=0;i<n && arr.length<n;i++){
+  [a,b]=[b,a+b];
+  arr.push(b)
+}
+return arr;
+
+}
+fn1(5)
+
+//Generator
